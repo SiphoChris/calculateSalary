@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto;
+    border: 2px rgb(95, 93, 93) solid;
+    width: fit-content;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+}
