@@ -11,52 +11,46 @@
     <div class="container">
       <form action="">
         <!--user-data -->
+        <p>Personal I nformation</p>
         <div>
           <label for="name">First Name</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" required/>
         </div>
         <div>
           <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" />
+          <input type="text" id="last-name" required/>
         </div>
         <div>
-          <label for="age">How old are you?</label>
-          <input type="text" id="age" />
+          <label for="age">Age</label>
+          <input type="text" id="age" required/>
         </div>
         <div>
-          <label for="date-of-birth">Your Date of birth</label>
-          <input type="date" id="date-of-birth" />
+          <label for="date-of-birth">Date of birth</label>
+          <input type="date" id="date-of-birth" required/>
         </div>
         <!-- gender -->
         <p>Gender</p>
         <div>
           <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" />
+          <input type="radio" name="gender" id="male" required/>
         </div>
         <div>
           <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" />
+          <input type="radio" name="gender" id="female" required/>
         </div>
         <!-- titles -->
         <p>Title</p>
         <div>
-          <label for="mr">Mr</label>
-          <input type="radio" id="mr" />
-        </div>
-        <div>
-          <label for="mrs">Mrs</label>
-          <input type="radio" id="mrs" />
-        </div>
-        <div>
-          <label for="doc">Doctor</label>
-          <input type="radio" id="doc" />
-        </div>
-        <div>
-          <label for="miss">Miss</label>
-          <input type="radio" id="miss" />
+          <select name="titles" id="titles" required>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="doc">Doctor</option>
+            <option value="miss">Miss</option>
+          </select>
         </div>
 
         <!-- subjects -->
+        <p>Subjects</p>
         <div>
           <label for="js">JavaScript</label>
           <input type="checkbox" id="js" />
@@ -77,8 +71,23 @@
           <label for="vue">Vue.JS</label>
           <input type="checkbox" id="vue" />
         </div>
-
-        <input type="text" value="Are you employed" />
+        <p>Employment</p>
+        <label for="job">Are You Employed?</label>
+        <select name="jobs" id="job" required>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        <div id="submit-btn">
+          <input type="submit" class="send-form" id="send-form" value="See Salary" required/>
+        </div>
+        <div class="hidden-div">
+          <label for="hours">Working Hours</label>
+          <input type="text" id="hours" placeholder="8 hours" required>
+          <label for="rate">Pay Rate</label>
+          <input type="text" id="rate" placeholder="R100" required>
+          <button class="send-form" id="calculate" type="button">Calculate</button>
+          <p id="calc-salary"></p>
+        </div>
       </form>
     </div>
   </body>
