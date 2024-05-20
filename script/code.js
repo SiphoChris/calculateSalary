@@ -26,7 +26,8 @@ calculateBtn.addEventListener("click", () => {
   
   msg.innerText = `
   Hello ${selectedTitle} ${document.querySelector('#name').value} ${document.querySelector('#last-name').value},
-  We hope you are doing well; here is your salary after deduction.
+  We hope you are doing well; 
+  here is your salary after deduction.
   R${result}. Thank you.
   `
 });
